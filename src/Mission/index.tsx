@@ -1,4 +1,5 @@
 import "./index.css";
+import { Link } from "react-router-dom";
 
 const Mission = () => (
   <div className="mission-container py-5">
@@ -74,9 +75,14 @@ const Mission = () => (
         <p className="lead mb-4">
           If you're passionate about innovation and eager to be part of a mission that's changing how millions of people plan their journeys, we want you on our team.
         </p>
-        <button className="btn btn-primary btn-lg px-5">
-          Join Our Team
-        </button>
+        <div className="d-flex gap-3">
+          <Link to="/join-team" className="btn btn-primary btn-lg px-4 py-2">
+            Join Our Team
+          </Link>
+          <Link to="/contact" className="btn btn-outline-light btn-lg px-4 py-2">
+            Contact Us
+          </Link>
+        </div>
       </div>
     </div>
   </div>

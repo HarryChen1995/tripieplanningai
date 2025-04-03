@@ -4,6 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Mission from "../Mission";
 import Home from "../Home";
 import AboutUs from "../About";
+import FAQ from "../FAQ";
+import Features from "../Features";
+import JoinTeam from "../JoinTeam";
+import Apply from "../Apply";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
 const TripiePlanningAI: React.FC = () => {
@@ -90,6 +94,21 @@ const TripiePlanningAI: React.FC = () => {
                     Our Mission
                   </Nav.Link>
                 </Nav.Item>
+                <Nav.Item className="mx-3">
+                  <Nav.Link 
+                    as={Link} 
+                    to="/features" 
+                    className="fw-semibold position-relative"
+                    style={{
+                      transition: "color 0.3s ease",
+                      color: "#fff !important"
+                    }}
+                    onMouseOver={e => e.currentTarget.style.color = "#00ff9d !important"}
+                    onMouseOut={e => e.currentTarget.style.color = "#fff !important"}
+                  >
+                    Features
+                  </Nav.Link>
+                </Nav.Item>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -97,12 +116,16 @@ const TripiePlanningAI: React.FC = () => {
 
         <main className="flex-grow-1 py-4">
           <div className="container">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<AboutUs />} />
-            <Route path="/mission" element={<Mission />} />
-          </Routes>
-        </div>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/mission" element={<Mission />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/features" element={<Features />} />
+              <Route path="/join-team" element={<JoinTeam />} />
+              <Route path="/apply" element={<Apply />} />
+            </Routes>
+          </div>
         </main>
 
         <footer className="bg-dark text-light py-5 mt-auto" style={{ background: "linear-gradient(to right, #1a1a1a, #2d2d2d)" }}>
@@ -153,7 +176,7 @@ const TripiePlanningAI: React.FC = () => {
                     <button onClick={() => scrollToSection('contact')} className="text-light text-decoration-none hover-primary bg-transparent border-0 p-0">Contact Us</button>
                   </li>
                   <li className="mb-2">
-                    <button onClick={() => scrollToSection('faq')} className="text-light text-decoration-none hover-primary bg-transparent border-0 p-0">FAQ</button>
+                    <Link to="/faq" className="text-light text-decoration-none hover-primary">FAQ</Link>
                   </li>
                   <li className="mb-2">
                     <button onClick={() => scrollToSection('privacy')} className="text-light text-decoration-none hover-primary bg-transparent border-0 p-0">Privacy Policy</button>
