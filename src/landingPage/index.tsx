@@ -8,7 +8,9 @@ import FAQ from "../FAQ";
 import Features from "../Features";
 import JoinTeam from "../JoinTeam";
 import Apply from "../Apply";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import SignUp from "../SignUp";
+import Header from "../Header";
+import { Container } from "react-bootstrap";
 
 const TripiePlanningAI: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
@@ -21,99 +23,7 @@ const TripiePlanningAI: React.FC = () => {
   return (
     <Router>
       <div className="d-flex flex-column min-vh-100">
-        <Navbar 
-          bg="dark" 
-          variant="dark" 
-          expand="lg" 
-          className="py-3 shadow-sm"
-          style={{
-            background: "linear-gradient(to right, #1a1a1a, #2d2d2d) !important"
-          }}
-        >
-          <Container>
-            <Navbar.Brand 
-              as={Link} 
-              to="/" 
-              className="fw-bold fs-4"
-              style={{ 
-                background: "linear-gradient(45deg, #00ff9d, #00b8ff)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                transition: "transform 0.3s ease"
-              }}
-              onMouseOver={e => e.currentTarget.style.transform = "scale(1.05)"}
-              onMouseOut={e => e.currentTarget.style.transform = "scale(1)"}
-            >
-              TripiePlanningAI
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbar-nav" />
-            <Navbar.Collapse id="navbar-nav">
-              <Nav className="ms-auto">
-                <Nav.Item className="mx-3">
-                  <Nav.Link 
-                    as={Link} 
-                    to="/" 
-                    className="fw-semibold position-relative"
-                    style={{
-                      transition: "color 0.3s ease",
-                      color: "#fff !important"
-                    }}
-                    onMouseOver={e => e.currentTarget.style.color = "#00ff9d !important"}
-                    onMouseOut={e => e.currentTarget.style.color = "#fff !important"}
-                  >
-                    Home
-                  </Nav.Link>
-                </Nav.Item>
-                <Nav.Item className="mx-3">
-                  <Nav.Link 
-                    as={Link} 
-                    to="/about" 
-                    className="fw-semibold position-relative"
-                    style={{
-                      transition: "color 0.3s ease",
-                      color: "#fff !important"
-                    }}
-                    onMouseOver={e => e.currentTarget.style.color = "#00ff9d !important"}
-                    onMouseOut={e => e.currentTarget.style.color = "#fff !important"}
-                  >
-                    About Us
-                  </Nav.Link>
-                </Nav.Item>
-                <Nav.Item className="mx-3">
-                  <Nav.Link 
-                    as={Link} 
-                    to="/mission" 
-                    className="fw-semibold position-relative"
-                    style={{
-                      transition: "color 0.3s ease",
-                      color: "#fff !important"
-                    }}
-                    onMouseOver={e => e.currentTarget.style.color = "#00ff9d !important"}
-                    onMouseOut={e => e.currentTarget.style.color = "#fff !important"}
-                  >
-                    Our Mission
-                  </Nav.Link>
-                </Nav.Item>
-                <Nav.Item className="mx-3">
-                  <Nav.Link 
-                    as={Link} 
-                    to="/features" 
-                    className="fw-semibold position-relative"
-                    style={{
-                      transition: "color 0.3s ease",
-                      color: "#fff !important"
-                    }}
-                    onMouseOver={e => e.currentTarget.style.color = "#00ff9d !important"}
-                    onMouseOut={e => e.currentTarget.style.color = "#fff !important"}
-                  >
-                    Features
-                  </Nav.Link>
-                </Nav.Item>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-
+        <Header />
         <main className="flex-grow-1 py-4">
           <div className="container">
             <Routes>
@@ -124,6 +34,7 @@ const TripiePlanningAI: React.FC = () => {
               <Route path="/features" element={<Features />} />
               <Route path="/join-team" element={<JoinTeam />} />
               <Route path="/apply" element={<Apply />} />
+              <Route path="/signup" element={<SignUp />} />
             </Routes>
           </div>
         </main>

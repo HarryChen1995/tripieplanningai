@@ -1,8 +1,15 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const Features: React.FC = () => {
+  const navigate = useNavigate();
+  
+  const handleGetStarted = () => {
+    navigate('/signup');
+  };
+  
   const features = [
     {
       icon: "bi-robot",
@@ -139,6 +146,7 @@ const Features: React.FC = () => {
             border: "none",
             boxShadow: "0 5px 15px rgba(0, 255, 157, 0.3)"
           }}
+          onClick={handleGetStarted}
         >
           Get Started Now
         </motion.button>
