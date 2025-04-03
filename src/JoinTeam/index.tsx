@@ -86,7 +86,7 @@ const JoinTeam: React.FC = () => {
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
               <Card className="h-100 border-0 shadow-sm">
-                <Card.Body className="p-4" style={{ height: '650px' }}>
+                <Card.Body className="p-4" style={{ height: 'auto' }}>
                   <div className="d-flex flex-column h-100">
                     <div>
                       <h3 className="h4 mb-2">{position.title}</h3>
