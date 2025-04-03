@@ -234,7 +234,7 @@ const TripiePlanningAI: React.FC = () => {
                     <li className="mb-2">• We reserve the right to modify or terminate our services at any time</li>
                     <li className="mb-2">• Your use of our service is subject to our Privacy Policy</li>
                     <li className="mb-2">• We collect and process your travel data to provide personalized recommendations</li>
-                    <li className="mb-2">• Your data is encrypted and stored securely on our servers</li>
+                    <li className="mb-2">• Your data is encrypted and securely stored</li>
                     <li className="mb-2">• We do not share your personal information with third parties without your consent</li>
                     <li className="mb-2">• You can request deletion of your account and associated data at any time</li>
                   </ul>
