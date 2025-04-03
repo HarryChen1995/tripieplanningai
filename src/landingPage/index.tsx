@@ -9,6 +9,7 @@ import Features from "../Features";
 import JoinTeam from "../JoinTeam";
 import Apply from "../Apply";
 import SignUp from "../SignUp";
+import Login from "../Login";
 import Header from "../Header";
 import { Container } from "react-bootstrap";
 
@@ -35,6 +36,7 @@ const TripiePlanningAI: React.FC = () => {
               <Route path="/join-team" element={<JoinTeam />} />
               <Route path="/apply" element={<Apply />} />
               <Route path="/signup" element={<SignUp />} />
+              <Route path="/login" element={<Login />} />
             </Routes>
           </div>
         </main>
