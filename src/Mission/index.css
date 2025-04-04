@@ -136,7 +136,7 @@
 
 .join-us-section .btn-primary {
   background: white;
-  color: #0d6efd;
+  color: #00b8ff;
   border: none;
   padding: 1rem 2.5rem;
   font-weight: 600;
@@ -172,6 +172,7 @@
 .join-us-section .btn-outline-light {
   border: 2px solid rgba(255, 255, 255, 0.8);
   padding: 1rem 2.5rem;
+  color: white;
   font-weight: 600;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 2rem;
@@ -180,6 +181,7 @@
 
 .join-us-section .btn-outline-light:hover {
   background: rgba(255, 255, 255, 0.1);
+  color: white;
   transform: translateY(-3px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
