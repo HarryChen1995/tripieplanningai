@@ -54,7 +54,7 @@ const Home = () => {
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
                   <motion.button 
-                    className="btn btn-primary btn-lg px-4 py-2"
+                    className="btn btn-primary px-4 py-2"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={handleGetStarted}
@@ -62,7 +62,7 @@ const Home = () => {
                     Get Started
                   </motion.button>
                   <motion.button 
-                    className="btn btn-outline-light btn-lg px-4 py-2"
+                    className="btn btn-outline-light px-4 py-2"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -151,7 +151,7 @@ const Home = () => {
             </div>
             <div className="col-lg-4 text-lg-end">
               <motion.button 
-                className="btn btn-primary btn-lg px-5 py-3"
+                className="btn btn-primary btn-lg px-5 py-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

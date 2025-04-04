@@ -43,10 +43,10 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1rem;
   letter-spacing: 0.3px;
   text-transform: uppercase;
-  font-weight: bold !important;
+  font-weight:600 !important;
 }
 
 .btn-primary::before {

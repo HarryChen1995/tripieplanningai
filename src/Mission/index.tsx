@@ -112,10 +112,10 @@ const Mission = () => (
             If you're passionate about innovation and eager to be part of a mission that's changing how millions of people plan their journeys, we want you on our team.
           </p>
           <div className="btn-container">
-            <Link to="/join-team" className="btn btn-primary btn-lg">
+            <Link to="/join-team" className="btn btn-primary">
               Join Our Team
             </Link>
-            <Link to="/contact" className="btn btn-outline-light btn-lg">
+            <Link to="/contact" className="btn btn-outline-light">
               Contact Us
             </Link>
           </div>
