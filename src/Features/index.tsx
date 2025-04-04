@@ -141,11 +141,6 @@ const Features: React.FC = () => {
           className="btn btn-primary btn-lg px-5 py-3"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          style={{
-            background: "linear-gradient(45deg, #00ff9d, #00b8ff)",
-            border: "none",
-            boxShadow: "0 5px 15px rgba(0, 255, 157, 0.3)"
-          }}
           onClick={handleGetStarted}
         >
           Get Started Now

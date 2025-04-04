@@ -129,32 +129,9 @@
   color: white;
 }
 
-.divider-text {
-  position: relative;
-  display: inline-block;
-  padding: 0 1rem;
-  color: #6c757d;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
 
-.divider-text::before,
-.divider-text::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 30%;
-  height: 1px;
-  background: #dee2e6;
-}
 
-.divider-text::before {
-  left: -35%;
-}
 
-.divider-text::after {
-  right: -35%;
-}
 
 .form-label {
   font-weight: 600;
