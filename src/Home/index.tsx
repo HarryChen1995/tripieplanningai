@@ -151,7 +151,7 @@ const Home = () => {
             </div>
             <div className="col-lg-4 text-lg-end">
               <motion.button 
-                className="btn btn-primary btn-lg px-5 py-2"
+                className="btn btn-primary px-4 py-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

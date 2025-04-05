@@ -2,9 +2,6 @@
   background-color: #ffffff;
 }
 
-.mission-divider {
-  display: none;
-}
 
 .mission-content {
   background: #f8f9fa;
@@ -138,7 +135,7 @@
   background: white;
   color: #00b8ff;
   border: none;
-  padding: 1rem 2.5rem;
+  padding: 1rem 1.5rem;
   font-weight: 600;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 2rem;
