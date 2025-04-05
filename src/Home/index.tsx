@@ -2,7 +2,7 @@ import "./home.css";
 import homeImage from "../assets/homebackground.png";
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-
+import { isMobile } from 'react-device-detect'
 const Home = () => {
   const navigate = useNavigate();
   
@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className="home-container">
       {/* Hero Section */}
-      <div className="hero-section position-relative">
+      <div className="hero-section">
         <motion.div 
           className="hero-image"
           initial={{ opacity: 0 }}
@@ -28,9 +28,9 @@ const Home = () => {
             position: 'relative'
           }}
         >
-          <div className="container h-100 d-flex align-items-center">
+          <div className="container h-100 d-flex align-items-center" style={{ paddingLeft: '10%', paddingRight: '10%', width: '100%'}}>
             <div className="row">
-              <div className="col-lg-8 text-white">
+              <div className="col-lg-8 col-sm-4 text-white">
                 <motion.h1 
                   className="display-4 fw-bold mb-4"
                   initial={{ opacity: 0, y: 20 }}
@@ -54,7 +54,7 @@ const Home = () => {
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
                   <motion.button 
-                    className="btn btn-primary px-4 py-2"
+                    className={`btn btn-primary ${isMobile ? 'px-2 py-1' : 'px-4 py-2'}`}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={handleGetStarted}
@@ -62,7 +62,7 @@ const Home = () => {
                     Get Started
                   </motion.button>
                   <motion.button 
-                    className="btn btn-outline-light px-4 py-2"
+                    className={`btn btn-outline-light ${isMobile ? 'px-2 py-1' : 'px-4 py-2'}`}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
